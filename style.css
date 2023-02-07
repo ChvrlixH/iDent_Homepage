@@ -1,0 +1,794 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 80px;
+}
+
+.navBar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+.logo {
+  width: 200px;
+  padding-left: 60px;
+  cursor: pointer;
+}
+
+.navBar ul {
+  padding-right: 40px;
+}
+
+.navBar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navBar ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(33, 29, 29);
+}
+
+.navBar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navBar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg.jpg);
+  width: 100%;
+  height: 91vh;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+}
+
+.text h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.text p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.call {
+  margin-top: 25px;
+  padding: 18px 1px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: rgb(51, 37, 119);
+  color: #fff;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.call:hover {
+  background-color: rgb(27, 18, 72);
+}
+
+.call_txt {
+  padding: 0 14px;
+  font-size: 19px;
+}
+
+.img_Women {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/women.png);
+  height: 100%;
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.landing_boxes_main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8fafc;
+  margin-bottom: 150px;
+}
+.boxes {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.box {
+  border: 1px solid white;
+  background: white;
+  width: 400px;
+  height: 300px;
+  padding: 35px 30px;
+  position: relative;
+  margin-top: -5%;
+}
+
+.left_box {
+  margin-left: 10%;
+  margin-right: 30px;
+}
+
+.main_box {
+  margin-right: 30px;
+}
+
+.fa-teeth,
+.fa-lightbulb,
+.fa-tooth {
+  font-size: 35px;
+}
+
+.box h3 {
+  display: inline-block;
+  padding-left: 20px;
+  letter-spacing: 1px;
+}
+
+.box p {
+  opacity: 0.7;
+  margin-top: 25px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.box a {
+  font-size: 16px;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.main_txt_p {
+  width: 100%;
+  height: auto;
+}
+
+.service_txt_main {
+  color: #878a9d;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  align-items: center;
+}
+
+.service_txt_main a {
+  text-decoration: none;
+  color: black;
+}
+
+.teeth {
+  margin: 0 8%;
+  display: flex;
+}
+
+.teeth img {
+  width: 100%;
+  max-width: 47%;
+  height: auto;
+  margin-right: 5%;
+}
+
+.text_main_right {
+  margin-top: 60px;
+  float: left;
+  align-items: center;
+}
+
+.text_main_right .teeth_large_txt {
+  color: #878a9d;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.6em;
+}
+
+.text_main_right h1 {
+  font-size: 28px;
+  color: #143e78;
+  font-weight: 600;
+}
+
+.check_txt {
+  display: inline-block;
+  color: #878a9d;
+  margin-bottom: 26px;
+  padding-left: 10px;
+}
+
+.fa-check {
+  color: rgb(115, 212, 115);
+  font-size: 20px;
+}
+
+.contact_header {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg);
+  width: 100%;
+  height: 190px;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.contact_header a {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.background_ser {
+  padding: 0 85px;
+}
+
+.total_services {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/doc2.jpg?id=4167);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.dentist_txt {
+  padding-left: 80px;
+  padding-top: 50px;
+  width: 70%;
+  height: auto;
+}
+
+.main_info {
+  margin-bottom: 40px;
+}
+
+.main_info h1 {
+  color: #143e78;
+  font-size: 32px;
+}
+
+.main_info p {
+  margin-top: 25px;
+  line-height: 1.7em;
+  color: #878a9d;
+}
+
+.left_dentist_services {
+  max-width: 45%;
+  height: 320px;
+  margin-right: 5%;
+  display: inline-block;
+}
+
+.right_dentist_services {
+  max-width: 45%;
+  height: 320px;
+  display: inline-block;
+}
+
+.dentBox {
+  border: 1px solid none;
+  padding: 10px;
+  width: 100%;
+  height: 180px;
+}
+
+.dentBox h2 {
+  display: inline-block;
+  padding-left: 15px;
+  margin-bottom: 18px;
+  font-weight: 550;
+  color: #143e78;
+}
+
+.dentBox p {
+  padding-left: 46px;
+  line-height: 1.7em;
+  color: #878a9d;
+}
+
+.fa-teeth-open,
+.fa-briefcase-medical {
+  font-size: 24px;
+}
+
+.contact_footer {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg);
+  width: 100%;
+  height: 190px;
+}
+
+.request {
+  padding-top: 70px;
+  padding-left: 140px;
+  padding-right: 140px;
+  color: #fff;
+  display: inline-block;
+  width: 70%;
+}
+
+.request h1 {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 26px;
+}
+
+.btn {
+  padding-right: 140px;
+  display: flex;
+  float: right;
+  align-items: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.btn button {
+  background: none;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.7s;
+  color: #ffffff;
+}
+
+.btn button:hover {
+  background: #ffffff;
+  color: #143e78;
+}
+
+.doctors_page {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8fafc;
+  padding: 150px 50px;
+}
+
+.doctors_page h1 {
+  text-align: center;
+  align-items: center;
+  color: #143e78;
+  font-size: 30px;
+}
+
+.all_doctors {
+  margin-top: 60px;
+  padding: 0 80px;
+  display: flex;
+}
+
+.doc {
+  border: 1px solid none;
+  max-width: 286.5px;
+  height: 388px;
+  margin-right: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 6px 30px 0 rgb(221 224 231 / 40%);
+}
+
+.doc > .john:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.doc > .kelly:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.doc > .alice:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.doc > .ben:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.doc_txt {
+  padding: 24px 15px;
+  text-align: center;
+}
+.doc h3 {
+  line-height: 1.8em;
+  color: #143e78;
+  font-size: 20px;
+}
+.doc p {
+  color: #878a9d;
+}
+
+.john {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent1.jpg);
+  background-size: cover;
+  width: 286.5px;
+  height: 286.5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.kelly {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent2.jpg);
+  background-size: cover;
+  width: 286.5px;
+  height: 286.5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.alice {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent3.jpg);
+  background-size: cover;
+  width: 286.5px;
+  height: 286.5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.ben {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent4.jpg);
+  background-size: cover;
+  width: 286.5px;
+  height: 286.5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.register {
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.register h1 {
+  font-size: 28px;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #143e78;
+}
+
+.register p {
+  color: #878a9d;
+  line-height: 1.7em;
+  margin: 0 0 30px;
+}
+
+.register_input {
+  margin-left: 300px;
+  margin-right: 250px;
+  margin-bottom: 120px;
+}
+
+.name {
+  display: inline-block;
+  width: 47%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+
+.fullname input {
+  width: 100%;
+  padding: 14px 23px;
+  border-radius: 3px;
+  line-height: 1.4em;
+  border: 1px solid #f1f1f1;
+  outline-color: #1d2128;
+}
+
+.date {
+  display: inline-block;
+  width: 47%;
+  margin-bottom: 3%;
+}
+
+.datenow input {
+  width: 100%;
+  padding: 14px 23px;
+  border-radius: 3px;
+  line-height: 1.4em;
+  border: 1px solid #f1f1f1;
+  outline-color: #1d2128;
+}
+
+.phone {
+  display: inline-block;
+  width: 47%;
+  margin-right: 2%;
+  margin-bottom: 4%;
+}
+
+.phone_span input {
+  width: 100%;
+  padding: 14px 23px;
+  border-radius: 3px;
+  line-height: 1.4em;
+  border: 1px solid #f1f1f1;
+  outline-color: #1d2128;
+}
+
+.mail {
+  display: inline-block;
+  width: 47%;
+  margin-bottom: 4%;
+}
+
+.email input {
+  width: 100%;
+  padding: 14px 23px;
+  border-radius: 3px;
+  line-height: 1.4em;
+  border: 1px solid #f1f1f1;
+  outline-color: #1d2128;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 47%;
+}
+.check_txt input {
+  width: 25px;
+  cursor: pointer;
+}
+
+.submit_btn {
+  float: right;
+  margin-right: 33px;
+}
+
+.submit_btn button {
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 14px 40px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #535eaa, #626db5);
+}
+
+.two_main_img {
+  width: 100%;
+}
+
+.img_header {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg?id=4145);
+  background-size: cover;
+  width: 100%;
+  height: 464.7px;
+  display: flex;
+}
+
+.img_header_txt {
+  width: 42%;
+  position: relative;
+  padding: 80px 0px 40px 60px;
+  color: #fff;
+}
+
+.img_header_txt h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.img_header_txt .p_header {
+  font-weight: 500;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.img_header_txt .p_footer {
+  font-weight: 500;
+  line-height: 1.7em;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.img_header_txt a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out, 0.2s color ease-in-out;
+}
+
+.img_header_txt a:hover {
+  opacity: 0.5;
+}
+
+.img_header img {
+  width: 50%;
+  height: 464.7px;
+}
+
+.img_footer {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg?id=4145);
+  width: 100%;
+  height: 464.7px;
+}
+
+.img_footer img {
+  width: 50%;
+  height: 464.7px;
+  float: right;
+}
+
+.img_footer_txt {
+  width: 46%;
+  position: relative;
+  padding: 80px 0px 40px 120px;
+  color: #fff;
+}
+
+.img_footer_txt h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.img_footer_txt .p_header {
+  font-weight: 500;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.img_footer_txt .p_footer {
+  font-weight: 500;
+  line-height: 1.7em;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.img_footer_txt a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out, 0.2s color ease-in-out;
+}
+
+.img_footer_txt a:hover {
+  opacity: 0.7;
+}
+
+.company_address {
+  margin: 80px 120px;
+  width: 80%;
+  height: auto;
+  display: flex;
+}
+
+.info_address,
+.info_phone,
+.info_email {
+  margin-right: 180px;
+}
+
+.company_address h2 {
+  color: #143e78;
+  margin-bottom: 18px;
+}
+
+.company_address p {
+  color: #878a9d;
+  line-height: 1.7em;
+}
+
+.company_contact_us {
+  margin: 100px 120px;
+  width: 80%;
+  height: auto;
+  display: flex;
+}
+
+.contact_faq {
+  width: 400px;
+}
+
+.contact_faq,
+.menu_faq,
+.whyus_faq {
+  margin-right: 85px;
+}
+
+.terms_faq,
+.menu_faq,
+.whyus_faq {
+  width: 180px;
+}
+
+.company_contact_us h3 {
+  margin-bottom: 36px;
+}
+
+.terms_faq p,
+.menu_faq p,
+.whyus_faq p {
+  line-height: 2.4em;
+  color: #878a9d;
+}
+
+.contact_faq_info {
+  line-height: 1.7em;
+  margin-bottom: 50px;
+  color: #878a9d;
+}
+
+.fa-phone-flip,
+.fa-envelope {
+  display: inline-block;
+  color: #337ab7;
+  padding-right: 12px;
+}
+
+.font_p {
+  display: inline-block;
+  color: #878a9d;
+}
+
+.copyright {
+  width: 100%;
+  height: 80px;
+  background-color: #f0ecec;
+  color: #9294a3;
+}
+
+.copyright p {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 15px;
+  font-family: "Nunito";
+}
